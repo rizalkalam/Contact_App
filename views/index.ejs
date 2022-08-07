@@ -1,0 +1,11 @@
+<h1>Hello World!</h1>
+<h2>halo <%= nama %></h2>
+<h4>Top 3 Player</h4>
+<% if (player.length < 1) { %>
+<p>Belum ada data</p>
+<% } else{ %> <% player.forEach(pr => { %>
+<ul>
+  <li>Nama : <%= pr.nama %></li>
+  <li>Email : <%= pr.email %></li>
+</ul>
+<% }) %> <% } %>
